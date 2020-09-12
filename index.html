@@ -3,3 +3,83 @@
 <head>
 
 </head>
+<body>
+ 
+    <nav id="navbar">
+        <header id="nav-header">
+        Matrix Documentation    
+        </header>
+        <a class="nav-link" href="#intro">Introduction</a>
+        <a class="nav-link" href="#server">Hosting a Server</a>
+        <a class="nav-link" href="#mod">Moderation</a>
+        <a class="nav-link" href="#encryption">Encryption</a>
+        <a class="nav-link" href="#bridge">Bridging</a>
+    </nav>
+
+    <main id="main-doc">
+       <section class="main-section">
+           <header id="intro">What is Matrix?</header>
+           <p>Matrix is an open standard for interoperable, decentralised, real-time communication over IP.</p>
+           <ul>
+               <li>there exists an <strong>open standard</strong> in the form of the <a href="https://matrix.org/docs/spec/">Matrix Specification</a></li>
+               <li>it's <strong>interoperable</strong>, meaning it is designed to <i>interoperate</i> with other communication systems, and being an Open Standard means it's easy to see how to interoperate with it</li>
+               <li>Matrix is <strong>decentralised</strong>, which means there is <i>no central point</i> - anyone can host their own server and have control over their data</li>
+               <li>it is designed to function in <strong>real-time</strong>, which means it is ideal for building systems that require immediate exchange of data, such as Instant Messaging</li>
+           </ul>
+           <p>You can make bots using js to interact with Matrix. Here's how to begin setting up your build environment to create your bot:</p>
+           <code>
+            mkdir my-bot<br>
+            cd my-bot<br>
+            npm install matrix-js-sdk<br>
+            touch index.js<br>
+            </code>
+       </section> 
+       <section class="main-section">
+            <header id="server">Server Setup</header>
+            <p><a href="https://github.com/matrix-org/synapse/">Synapse</a> is the most widely installed Matrix homeserver implementation. It is written in Python 3.
+            <br><br>
+            <a href="https://matrix.org/docs/guides/#installing-synapse">Many guides have been written</a> explaining how to install Synapse, but there is sometimes confusion about the exact steps.
+            </p>
+            <ol>
+                <li>Install from Source</li>
+                <li>matrix-docker-ansible-deploy</li>
+            </ol>
+            <p>In order to being the install of your homserver run:</p>
+            <code>
+                mkdir -p ~/synapse<br>
+                virtualenv -p python3 ~/synapse/env<br>
+                source ~/synapse/env/bin/activate<br>
+                pip install --upgrade pip<br>
+                pip install --upgrade setuptools<br>
+                pip install matrix-synapse<br>
+            </code>
+        </section> 
+        <section class="main-section">
+            <header id="mod">Moderation in Matrix</header>
+            <p></p>
+            <ol>
+                <li></li>
+            </ol>
+            <code></code>
+            <p></p>
+        </section>        
+        <section class="main-section">
+            <header id="encryption">End-to-End Encryption in Matrix</header>
+            <p></p>
+            <ol>
+                <li></li>
+            </ol>
+            <code></code>
+            <p></p>
+        </section>        
+        <section class="main-section">
+            <header id="bridge">Bridging Matrix With Other Services</header>
+            <p></p>
+            <ol>
+                <li></li>
+            </ol>
+            <code></code>
+            <p></p>
+        </section> 
+    </main>
+</body>

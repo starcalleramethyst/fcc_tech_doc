@@ -69,19 +69,16 @@
         <section class="main-section">
             <header id="encryption">End-to-End Encryption in Matrix</header>
             <p>End-to-end encryption in Matrix is based on the Olm and Megolm cryptographic ratchets. The recommended starting point for any client authors is with the <a href="https://matrix.org/git/olm">libolm</a> library, which contains implementations of all of the cryptographic primitives required. The library itself is written in C/C++, but is architected in a way which makes it easy to write wrappers for higher-level languages.</p>
-            <ol>
-                <li></li>
-            </ol>
-            <code></code>
-            <p></p>
+            <p>To enable encryption in a room, a client should send a state event of type <code>m.room.encryption_,</code> and <code>content { "algorithm": "m.megolm.v1.aes-sha2" }</code>.</p>
         </section>        
         <section class="main-section">
             <header id="bridge">Bridging Matrix With Other Services</header>
-            <p></p>
+            <p>Bridges come in many flavours, and we need consistent terminology within the Matrix community to ensure everyone (users, developers, core team) is on the same page. This post is primarily intended for bridge developers to refer to when building bridges.</p>
             <ol>
-                <li></li>
+                <li>portal rooms</li>
+                <li>plumbed rooms</li>
             </ol>
-            <p></p>
+            <p>One-way bridging is rare, but can be used to represent a bridge that is bridging from the remote system into matrix. This is common when the remote system does not permit message posting, or is simply not capable of handling posting outside their system. The users bridged from the remote system often appear as virtual users in matrix, as is the case with <a href="https://github.com/turt2live/matrix-appservice-instagram">matrix-appservice-instagram</a>.</p>
         </section> 
     </main>
 </body>

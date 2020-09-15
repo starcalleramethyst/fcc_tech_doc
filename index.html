@@ -56,16 +56,19 @@
         </section> 
         <section class="main-section">
             <header id="mod">Moderation in Matrix</header>
-            <p></p>
+            <p>Matrix is an open protocol and network for decentralised communication, where users can participate in public and private chat rooms through servers (‘homeservers’) and clients of their choice, similar to email. The goal is to provide a free and open global network for interoperable e2e-encrypted communication, without sacrificing usability, and so liberate users from being trapped in the proprietary communication silos which have become commonplace today.
+                <br><br> A large open communication network (much like email or the web itself) comes with an interesting set of challenges around moderation. For Matrix, this boils down to:</p>
             <ol>
-                <li></li>
+                <li>ensuring that moderators of chatrooms have the necessary tools to enforce whatever code of conduct they require</li>
+                <li>ensuring that server administrators can enforce terms of service on how their servers are used</li>
+                <li>ensuring that users themselves are empowered to filter out content they do not wish to see.</li>
             </ol>
-            <code></code>
-            <p></p>
+            <p>In Matrix, one tool that moderators have is kicking people from servers. This can be done via the Kick or Ban buttons from the user info panel, or by typing <code>/kick @user:domain.com <reason goes here></code> or <code>/ban @user:domain.com <reason goes here></code> in the message composer.</p>
+            
         </section>        
         <section class="main-section">
             <header id="encryption">End-to-End Encryption in Matrix</header>
-            <p></p>
+            <p>End-to-end encryption in Matrix is based on the Olm and Megolm cryptographic ratchets. The recommended starting point for any client authors is with the <a href="https://matrix.org/git/olm">libolm</a> library, which contains implementations of all of the cryptographic primitives required. The library itself is written in C/C++, but is architected in a way which makes it easy to write wrappers for higher-level languages.</p>
             <ol>
                 <li></li>
             </ol>
@@ -78,7 +81,6 @@
             <ol>
                 <li></li>
             </ol>
-            <code></code>
             <p></p>
         </section> 
     </main>

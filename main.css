@@ -3,8 +3,11 @@
 
 /* Global element styling start */
 html, body {
+    min-width: 290px;
     font-family: 'Epilogue', sans-serif;
+    color: black;
     background-color: rgb(251, 244, 230);
+    line-height: 1.5;
 }
 
 /* Global element styling end */
@@ -23,6 +26,11 @@ html, body {
     border-right: solid;
     border-color: black;
     border-width: 1px;
+}
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+
 }
 /* id styling end */
 

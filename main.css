@@ -10,6 +10,31 @@ html, body {
     line-height: 1.5;
 }
 
+header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+  }
+
+code {
+    display: block;
+    font-family: monospace;
+    color: crimson;
+    background-color: rgb(255, 235, 198);
+    padding: 10px;
+    margin: 10px;
+}
+
+p code {
+    display: inline-block;
+    font-family: monospace;
+    color: crimson;
+    background-color: rgb(255, 235, 198);
+    padding: 0px;
+    margin: 0px;
+}
 /* Global element styling end */
 
 /* class styling start */
@@ -27,10 +52,46 @@ html, body {
     border-color: black;
     border-width: 1px;
 }
-#main-doc {
+  
+  #main-doc header {
+      text-align: left;
+      margin: 0px;
+  }
+
+  #main-doc {
     position: absolute;
     margin-left: 310px;
 
 }
+
+#main-doc a {
+    color: rgb(27, 49, 92);
+    text-decoration: underline;
+}
+
+#navbar ul {
+    height: 90%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    border-top: 1px solid;
+    text-align: left;
+    font-size: 1.5rem;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #28292c;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
 /* id styling end */
 

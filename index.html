@@ -2,6 +2,7 @@
 
 <head>
 <link rel="stylesheet" type="text/css" href="/reset.css">
+<link rel="stylesheet" type="text/css" href="/main.css">
 <title>Matrix Docs</title>
 </head>
 <body>
@@ -10,23 +11,25 @@
         <header id="nav-header">
         Matrix Documentation    
         </header>
-        <a class="nav-link" href="#intro">Introduction</a>
-        <a class="nav-link" href="#server">Hosting a Server</a>
-        <a class="nav-link" href="#mod">Moderation</a>
-        <a class="nav-link" href="#encryption">Encryption</a>
-        <a class="nav-link" href="#bridge">Bridging</a>
+        <ul>
+        <li><a class="nav-link" href="#intro">Introduction</a></li>
+        <li><a class="nav-link" href="#server">Hosting a Server</a></li>
+        <li><a class="nav-link" href="#mod">Moderation</a></li>
+        <li><a class="nav-link" href="#encryption">Encryption</a></li>
+        <li><a class="nav-link" href="#bridge">Bridging</a></li>
+        </ul>
     </nav>
 
     <main id="main-doc">
        <section class="main-section">
            <header id="intro">What is Matrix?</header>
            <p>Matrix is an open standard for interoperable, decentralised, real-time communication over IP.</p>
-           <ul>
+           <ol>
                <li>there exists an <strong>open standard</strong> in the form of the <a href="https://matrix.org/docs/spec/">Matrix Specification</a></li>
                <li>it's <strong>interoperable</strong>, meaning it is designed to <i>interoperate</i> with other communication systems, and being an Open Standard means it's easy to see how to interoperate with it</li>
                <li>Matrix is <strong>decentralised</strong>, which means there is <i>no central point</i> - anyone can host their own server and have control over their data</li>
                <li>it is designed to function in <strong>real-time</strong>, which means it is ideal for building systems that require immediate exchange of data, such as Instant Messaging</li>
-           </ul>
+           </ol>
            <p>You can make bots using js to interact with Matrix. Here's how to begin setting up your build environment to create your bot:</p>
            <code>
             mkdir my-bot<br>

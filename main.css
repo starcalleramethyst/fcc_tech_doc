@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
+/* font-family: 'Epilogue', sans-serif; */
+
+/* Global element styling start */
+html, body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: rgb(251, 244, 230);
+}
+
+/* Global element styling end */
+
+/* class styling start */
+
+/* class styling end */
+
+/* id styling start */
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 300px;
+    border-right: solid;
+    border-color: black;
+    border-width: 1px;
+}
+/* id styling end */
+

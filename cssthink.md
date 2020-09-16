@@ -4,7 +4,7 @@
 ---
 # here's the story: 
 
-When I arrive to Matrix Docs, I notic that the page is divided into two unequal columns, with the bigger one on the right, filling approx 2/3 of the viewport. 
+When I arrive to Matrix Docs, I notice that the page is divided into two unequal columns, with the bigger one on the right, filling approx 2/3 of the viewport. 
 
 I don't notice the font very much, and am drawn to the title in the top left corner, and see that there are what appear to be section titles decending below the title. 
 
